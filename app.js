@@ -79,7 +79,7 @@ app.get('/update', (req, res) => {
 	{
 		var d = new Date();
 		var dateString = d.format("yyyyMMdd");
-		var timeString = d.format("hhmm");
+		var timeString = d.format("hh:mm");
 		var temperature = req.query.field1;
 		var output = dateString + "," + timeString + "," + temperature;
 
